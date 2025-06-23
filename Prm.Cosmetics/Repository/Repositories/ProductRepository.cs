@@ -59,6 +59,17 @@ namespace Repository.Repositories
                     query = query.Where(p => p.StockQuantity == 0);
                 }
             }
+            // Filter by Category
+            if (!string.IsNullOrWhiteSpace(searchDto?.Category))
+            {
+                query = query.Where(p => p.Category == searchDto.Category);
+            }
+
+            // Filter by SkinType
+            if (!string.IsNullOrWhiteSpace(searchDto?.SkinType))
+            {
+                query = query.Where(p => p.SkinType == searchDto.SkinType);
+            }
 
             // Apply sorting (with default values if searchDto is null)
             var sortBy = searchDto?.SortBy ?? "CreatedAt";
@@ -139,6 +150,8 @@ namespace Repository.Repositories
                 "price" => p => p.Price,
                 "stockquantity" => p => p.StockQuantity,
                 "createdat" => p => p.CreatedAt,
+                "category" => p => p.Category,
+                "skintype" => p => p.SkinType,
                 _ => p => p.CreatedAt
             };
 

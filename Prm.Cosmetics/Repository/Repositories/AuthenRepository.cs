@@ -117,7 +117,7 @@ namespace Repository.Repositories
 
             _context.Users.Add(user);
             await _context.SaveChangesAsync();
-
+            user.Role = await _context.Roles.FindAsync(user.RoleId);
             // Generate JWT token for the new user
             return GenerateJwtToken(user);
         }

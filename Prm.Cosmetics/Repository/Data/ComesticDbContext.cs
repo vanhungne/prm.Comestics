@@ -95,7 +95,7 @@ namespace Repository.Data
         Id = 1,
         FullName = "Admin User",
         Email = "admin@example.com",
-        PasswordHash = "passwordAdmin",
+        PasswordHash = "$2a$11$Pn4clTN60Zfkw7B2n8Z4Pewe89PhVHDWH1i31Qr.K1OZp2YRHNOmO",
         RoleId = 1,
         CreatedAt = DateTime.Now
     },
@@ -104,7 +104,7 @@ namespace Repository.Data
         Id = 2,
         FullName = "Customer One",
         Email = "customer1@example.com",
-        PasswordHash = "passwordCustomer1",
+        PasswordHash = "$2a$11$Pn4clTN60Zfkw7B2n8Z4Pewe89PhVHDWH1i31Qr.K1OZp2YRHNOmO",
         RoleId = 2,
         CreatedAt = DateTime.Now
     },
@@ -113,7 +113,7 @@ namespace Repository.Data
         Id = 3,
         FullName = "Customer Two",
         Email = "customer2@example.com",
-        PasswordHash = "passwordCustomer2",
+        PasswordHash = "$2a$11$Pn4clTN60Zfkw7B2n8Z4Pewe89PhVHDWH1i31Qr.K1OZp2YRHNOmO",
         RoleId = 2,
         CreatedAt = DateTime.Now
     }
