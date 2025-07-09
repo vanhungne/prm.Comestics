@@ -21,6 +21,7 @@ namespace Repository
             service.AddScoped<IOrderRepository, OrderRepository>();
             service.AddScoped<ICartItemRepository, CartItemRepository>();
             service.AddScoped<IPaymentRepository, PaymentRepository>();
+            service.AddScoped<IUserRepository, UserRepository>();
             return service;
         }
     }

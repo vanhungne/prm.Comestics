@@ -20,6 +20,7 @@ namespace Service
             service.AddScoped<ICartService,CartService>();
             service.AddScoped<IPaypalService, PayPalService>();
             service.AddScoped<IOrderService, OrderService>();
+            service.AddScoped<IUserService, UserService>();
             return service;
         }
         }
