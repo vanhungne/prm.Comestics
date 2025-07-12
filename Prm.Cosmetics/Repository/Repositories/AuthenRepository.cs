@@ -112,7 +112,10 @@ namespace Repository.Repositories
                 PasswordHash = hashedPassword,
                 FullName = registerDTO.FullName,
                 RoleId = 2, // Default role, adjust as needed
-                CreatedAt = DateTime.UtcNow
+                CreatedAt = DateTime.UtcNow,
+                Phone = registerDTO.phone,
+                address = registerDTO.address
+             
             };
 
             _context.Users.Add(user);

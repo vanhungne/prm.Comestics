@@ -13,6 +13,9 @@ namespace Repository.Entities
         public string Email { get; set; }
         public string PasswordHash { get; set; }
 
+        public string? Phone {get; set; }
+        public string? address { get; set; }
+
         public int RoleId { get; set; }
         public Role Role { get; set; }
 

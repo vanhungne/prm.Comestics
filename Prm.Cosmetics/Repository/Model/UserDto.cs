@@ -11,6 +11,8 @@ namespace Repository.Model
         public int Id { get; set; }
         public string FullName { get; set; }
         public string Email { get; set; }
+        public string phone { get; set; }
+        public string address { get; set; }
         public int RoleId { get; set; }
         public string RoleName { get; set; }
         public DateTime CreatedAt { get; set; }
@@ -36,6 +38,8 @@ namespace Repository.Model
         public int Id { get; set; }
         public string FullName { get; set; }
         public string Email { get; set; }
+        public string address { get;set; }
+        public string phone { get;set;}
         public int RoleId { get; set; }
         public string RoleName { get; set; }
         public DateTime CreatedAt { get; set; }
